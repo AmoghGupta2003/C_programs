@@ -6,12 +6,10 @@ int main() {
     int smax = INT_MIN;
     for(int i=0; i<=6; i++){
         if(max<arr[i]){
+            smax = max;
             max = arr[i];
         }
-    }
-    //max = 19
-    for(int i=0; i<=6; i++){
-        if(arr[i]!=max && smax<arr[i]){
+        else if(smax<arr[i]){
             smax = arr[i];
         }
     }
